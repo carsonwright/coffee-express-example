@@ -4,13 +4,13 @@
 Fill out the information in the config/db/database.json file
 #### Migrations
 To run migrations use the following
-```coffeescript
+```bash
 db-migrate up
 ```
 
 To reverse a migration 
-```coffeescript
-    db-migrate down
+```bash
+db-migrate down
 ```
 
 ### Routes
