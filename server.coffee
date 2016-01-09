@@ -73,4 +73,9 @@ class Server
       console.log('Example app listening at http://%s:%s', host, port)
     )
 
-(new Server()).start()
+if (!module.parent)
+    (new Server).start()
+else
+    module.exports = new Server
+
+
