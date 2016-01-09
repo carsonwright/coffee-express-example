@@ -1,0 +1,18 @@
+{
+  "development": {
+  	"driver": "postgresql",
+    "host": "localhost",
+    "port": 5432,
+    "database": "example",
+    "user": "userExample",
+    "password": "passwordExample"
+  },
+  "production": {
+    "driver": "postgresql",
+    "host": {"ENV": "RDS_HOSTNAME"},
+    "database": {"ENV": "RDS_DB_NAME"},
+    "port": {"ENV": "RDS_PORT"},
+    "user": {"ENV": "RDS_USERNAME"},
+    "password": {"ENV": "RDS_PASSWORD"}
+  }
+}
